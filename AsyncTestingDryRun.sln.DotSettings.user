@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=192b5a79_002Dee52_002D438b_002D9f20_002D92fe960a38cc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldCallDelayWith30Seconds" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::CEA3625E-AA8E-4B3B-ABBC-005048A2561F::.NETCoreApp,Version=v3.1::AsyncTestingDryRunTests.WorkerTests.ShouldCallDelayWith30Seconds&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e94962e0_002Da854_002D42a1_002Db6c5_002D0e4a4020fd33/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WorkerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::CEA3625E-AA8E-4B3B-ABBC-005048A2561F::.NETCoreApp,Version=v3.1::AsyncTestingDryRunTests.WorkerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f288a6ab_002D213f_002D457a_002Da454_002Dac755607d284/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldCallDelayWith5MinutesWhenNotEnoughEvents" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="D:\Workspace\dotnet\repository\AsyncTestingDryRun\AsyncTestingDryRunTests" Presentation="&amp;lt;AsyncTestingDryRunTests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
