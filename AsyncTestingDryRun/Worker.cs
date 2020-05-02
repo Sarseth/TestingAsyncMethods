@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace AsyncTestingDryRun {
     public class Worker {
         private const int THRESHOLD = 100;
-        
+
         private readonly ConcurrentQueue<string> queue;
         private readonly ISender sender;
         private readonly IAsyncDelayer asyncDelayer;
@@ -17,13 +17,11 @@ namespace AsyncTestingDryRun {
             queue = new ConcurrentQueue<string>();
         }
 
-        // Launch place of worker
         public Task Run(CancellationToken cancellationToken) {
             return Task.Factory.StartNew(() =>
                 AnalyticsSenderTask(cancellationToken), TaskCreationOptions.LongRunning);
         }
 
-        // Fueling our worker
         public void AddToQueue(string newString) {
             queue.Enqueue(newString);
         }
@@ -40,9 +38,9 @@ namespace AsyncTestingDryRun {
         }
 
         private void SendHundred(CancellationToken cancellationToken) {
-            string[] stringBatch = new string[THRESHOLD * 2];
+            string[] stringBatch = new string[THRESHOLD];
             int i = 0;
-            while (i < THRESHOLD * 2 && queue.TryDequeue(out string stringToSend)) {
+            while (i < THRESHOLD && queue.TryDequeue(out string stringToSend)) {
                 stringBatch[i++] = stringToSend;
             }
             sender.Send(stringBatch, cancellationToken);
